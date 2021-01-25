@@ -1,0 +1,89 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.flex img {
+    width: 500px
+}
+
+.album img {
+    width: 300px;
+    margin: 25px;
+    box-shadow: 5px 5px 2.5px gray;
+    border-radius: 5px
+}
+
+.item {
+    flex: .5;
+    margin: 2.5%
+}
+
+.bt {
+    background-image: linear-gradient(45deg, #ff69b4, #ff0080);
+    color: #fff;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px 25px
+}
+
+h2 {
+    font-size: 1.85em
+}
+
+h3 {
+    font-size: 1.5em
+}
+
+h4 {
+    font-size: 1.3em
+}
+
+p {
+    font-size: 1.05em
+}
+
+#footer {
+    text-align: center
+}
+
+#h4 {
+    margin-bottom: -5px
+}
+
+#foot {
+    background-image: url(images/footer-bg.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 100px
+}
+
+#footchild,
+#h2 {
+    text-align: center
+}
+
+#footchild {
+    flex-basis: 750px
+}
+
+#h2 {
+    margin-top: 50px
+}
+
+#works {
+    background: url(images/latest-work-bg.png);
+    background-size: 100%
+}
+
+#header {
+    background: url(images/header-bg.png)
+}
+
+#bio {
+    background: url(images/biography-bg.png);
+    background-size: 100%
+}
