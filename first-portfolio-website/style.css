@@ -12,7 +12,7 @@
 .album img {
     width: 300px;
     margin: 25px;
-    box-shadow: 5px 5px 2.5px gray;
+    box-shadow: 5px 5px 10px 2.5px gray;
     border-radius: 5px
 }
 
@@ -53,21 +53,16 @@ p {
     margin-bottom: -5px
 }
 
-#foot {
-    background-image: url(images/footer-bg.png);
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 50px 0 100px
-}
-
 #footchild,
 #h2 {
     text-align: center
 }
 
 #footchild {
-    flex-basis: 750px
+    background-image: url(images/footer-bg.png);
+    background-size: 100%;
+    width: 750px;
+    margin: 100px auto
 }
 
 #h2 {
