@@ -1,4 +1,4 @@
-Beautify h1 {
+h1 {
     font-size: 40px
 }
 
@@ -36,10 +36,11 @@ p {
     -webkit-align-items: center;
     -moz-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    padding-top: 15px;
 }
 
-.nav a {
+.nav a:not([id=logo], [id=menu], [id=Login]) {
     margin: 0 20px
 }
 
@@ -71,7 +72,6 @@ a:hover {
 }
 
 #logo {
-    margin-top: 15px;
     width: 150px;
     margin-right: auto;
     -webkit-flex-shrink: 0;
@@ -308,8 +308,16 @@ footer {
     display: none
 }
 
+.menu {
+    margin-left: 25px;
+}
+
 .menu a {
-    margin: 20px 0 0
+    margin: 20px 0 0;
+}
+
+#collapse-login {
+    margin-top: 25px;
 }
 
 .bar {
