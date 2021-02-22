@@ -1,0 +1,76 @@
+body {
+    padding: 50px 0;
+}
+
+#shop {
+    background-color: rgb(245, 245, 245);
+}
+
+.item-image {
+    width: 120px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+    padding: 25px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.buy h4 {
+    margin: 0 25px;
+}
+
+h3 {
+    margin-left: 25px;
+}
+
+input {
+    width: 50px;
+}
+
+#removePhone,
+#removeCase {
+    cursor: pointer;
+}
+
+.checkout {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding: 25px;
+}
+
+#checkout {
+    text-align: center;
+    Color: white;
+    background-color: red;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+#checkout:hover {
+    background-color: #dd0000;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+}
+
+.counter {
+    height: 24px;
+    width: 50px;
+    text-align: center;
+    margin: 2.5px;
+}

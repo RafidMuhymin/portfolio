@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="shop">
+        <main>
+            <div class="item">
+                <img class="item-image" src="images/product-1.png" alt="iPhone 11">
+                <h3>iPhone 11 128GB Black</h3>
+                <div class="buy">
+                    <input type="button" value="-" class="button" id="phoneDecrease">
+                    <input class="counter" value="0" type="text" id="phoneCounter" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input type="button" value="+" class="button" id="phoneIncrease">
+                    <h4>$<span id="phonePrice">0</span></h4>
+                    <img id="removePhone" src="images/remove.png" alt="remove-item">
+                </div>
+            </div>
+            <div class="item">
+                <img class="item-image" src="images/product-2.png" alt="iPhone 11 Casing">
+                <h3>iPhone 11 Silicone Case - Black</h3>
+                <div class="buy">
+                    <input type="button" value="-" class="button" id="caseDecrease">
+                    <input class="counter" value="0" type="text" id="caseCounter" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input type="button" value="+" class="button" id="caseIncrease">
+                    <h4>$<span id="casePrice">0</span></h4>
+                    <img id="removeCase" src="images/remove.png" alt="remove-item">
+                </div>
+            </div>
+        </main>
+    </div>
+    <section>
+        <div>
+            <h4>Total: $<span id="total">0</span></h4>
+        </div>
+        <div>
+            <h4>Tax: $<span id="tax">0</span></h4>
+        </div>
+        <div>
+            <h4>Grand Total: $<span id="grandTotal">0</span></h4>
+        </div>
+        <div class="checkout">
+            <button id="checkout">
+            <h2>Check out</h2>
+        </button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
