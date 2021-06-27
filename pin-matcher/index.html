@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pin Matcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-6">
+        <div class="half-width">
+          <input id="pin" disabled="true" type="text" />
+          <button id="generator" class="generate-btn">Generate Pin</button>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="half-width">
+          <input
+            id="match"
+            type="text"
+            maxlength="4"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          />
+          <div class="numbers">
+            <div>
+              <div>
+                <div id="seven" class="button">7</div>
+                <div id="eight" class="button">8</div>
+                <div id="nine" class="button">9</div>
+              </div>
+              <div>
+                <div id="four" class="button">4</div>
+                <div id="five" class="button">5</div>
+                <div id="six" class="button">6</div>
+              </div>
+              <div>
+                <div id="one" class="button">1</div>
+                <div id="two" class="button">2</div>
+                <div id="three" class="button">3</div>
+              </div>
+              <div>
+                <div id="delNum" class="button">DEL</div>
+                <div id="zero" class="button">0</div>
+                <div id="cancel" class="button">C</div>
+              </div>
+              <div>
+                <button id="submit" type="submit" class="submit-btn">
+                  Submit
+                </button>
+                <p class="action-left"><span id="count">3</span> try left</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notify-section">
+        <p id="failure" class="notify">❌ Pin Didn't Match, Please try again</p>
+        <p id="success" class="notify">
+          ✅ Pin Matched... Secret door is opening for you
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
